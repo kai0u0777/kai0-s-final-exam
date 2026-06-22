@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互動式網頁設計 - 期末成果整合</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="theme-light">
+
+    <nav class="navbar">
+        <div class="logo" id="main-logo">Final exam</div>
+        <ul class="nav-links">
+            <li class="hide-on-mobile"><a href="https://www.tsmc.com/chinese" target="_blank">台積電</a></li>
+            <li class="hide-on-mobile"><button id="theme-toggle-btn" class="btn-theme">切換暗色馬卡龍</button></li>
+            
+            <li><button id="contact-btn" class="btn-chat">Contact US</button></li>
+        </ul>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-container">
+            <h1 id="hero-title">我的未來，由<span class="highlight" id="user-nickname">Kai0</span>主導</h1>
+            <p class="subtitle">互動式網頁設計終極整合成果網頁。</p>
+            
+            <div class="content-grid">
+                <div class="card chat-box">
+                    <h3>🤖  AI 互動助理</h3>
+                    <div class="input-group">
+                        <input type="text" id="user-input" placeholder="輸入指令：你好、功能，或『新增待辦 喝下午茶』">
+                        <button id="send-btn" class="btn-primary">發送指令</button>
+                    </div>
+                    <div class="response-container">
+                        <p id="ai-response">AI 助理：等待指令中... 試著輸入「新增待辦 準備期末考」看看！</p>
+                    </div>
+                </div>
+
+                <div class="card todo-section">
+                    <h3>📋 我的待辦清單 (To-Do List)</h3>
+                    <div class="input-group">
+                        <input type="text" id="todo-input" placeholder="手動添加待辦事項...">
+                        <button id="add-todo-btn" class="btn-success">手動新增</button>
+                    </div>
+                    <ul id="todo-list">
+                        </ul>
+                    <div class="todo-footer">
+                        <button id="clear-all-btn" class="btn-danger">🧹 清除所有項目</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal-btn" id="close-modal-btn">&times;</span>
+            <h2>📬 聯絡我們 (Contact US)</h2>
+            <p>感謝您的點擊！如果有任何網頁設計合作機會，歡迎透過以下方式聯絡：</p>
+            <div class="contact-info">
+                <p>📍 <strong>姓名：</strong><span class="modal-nickname">Kai0</span></p>
+                <p>📧 <strong>Email：</strong>a0909582504@gmail.com</p>
+                <p>🏫 <strong>學校：</strong>東吳大學</p>
+            </div>
+            <button id="modal-confirm-btn" class="btn-primary" style="width: 100%; margin-top: 15px;">我知道了！</button>
+        </div>
+    </div>
+
+    <script src="java1.js"></script>
+</body>
+</html>
